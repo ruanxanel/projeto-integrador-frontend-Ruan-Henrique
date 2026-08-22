@@ -6,35 +6,82 @@
     <title>Obsidian</title>
 </head>
 <body>
-    <h1>Obsidian</h1>
-    <p>Obsidian é uma plataforma para descobrir livros de Dark Romance de acordo com o gosto de cada leitor.</p>
-    <ul>
-        <li>Mafia Romance</li>
-        <li>Dark Academia</li>
-        <li>Enemies to Lovers</li>
-        <li>Forbidden Romance</li>
-        <li>Romance Psicológico</li>
-        <li>Romance Sobrenatural</li>
-    </ul>
-    <table>
-    <tr>
-        <th>Título</th>
-        <th>Autor(a)</th>
-        <th>Compre aqui</th>
-    </tr>
-    <tr>
-        <td>Icebreaker</td>
-        <td>Hannah Grace</td>
-        <td><a href="https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
-    </tr>
-    <tr>
-        <td>Haunting Adeline</td>
-        <td>H. D. Carlton</td>
-        <td><a href="https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/855100685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
-    </tr>
-</table>
+    <header>
+        <h1>Obsidian</h1>
+        <p>Obsidian é uma plataforma para descobrir livros de Dark Romance de acordo com o gosto de cada leitor.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Gêneros que Exploramos</h2>
+            <ul>
+                <li>Mafia Romance</li>
+                <li>Dark Academia</li>
+                <li>Enemies to Lovers</li>
+                <li>Forbidden Romance</li>
+                <li>Romance Psicológico</li>
+                <li>Romance Sobrenatural</li>
+            </ul>
+        </section>
 
-<img src="assets/images/Icebreak.webp" alt="Capa do livro Icebreaker, de Hannah Grace" width="200">
-<img src="assets/images/haunting.webp" alt="Capa do livro Haunting Adeline, de H. D. Carlton" width="200">
+        <section>
+            <h2>Livros em Destaque</h2>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor(a)</th>
+                    <th>Compre aqui</th>
+                </tr>
+                <tr>
+                    <td>Icebreaker</td>
+                    <td>Hannah Grace</td>
+                    <td><a href="https://www.amazon.com.br/Icebreaker-Hannah-Grace/dp/1398525685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
+                </tr>
+                <tr>
+                    <td>Haunting Adeline</td>
+                    <td>H. D. Carlton</td>
+                    <td><a href="https://www.amazon.com.br/Haunting-Adeline-H-D-Carlton/dp/855100685" target="_blank" rel="noopener noreferrer">Visitar Amazon</a></td>
+                </tr>
+            </table>
+            <img src="assets/images/Icebreak.webp" alt="Capa do livro Icebreaker, de Hannah Grace" width="200">
+            <img src="assets/images/haunting.webp" alt="Capa do livro Haunting Adeline, de H. D. Carlton" width="200">
+        </section>
+    
+        <section>
+            <h2>Descubra seu Próximo Livro</h2>
+            <form>
+                <fieldset>
+                    <legend>Conte suas preferências de leitura</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="13" max="120">
+
+                    <label for="genero">Gênero preferido:</label>
+                    <select id="genero" name="genero">
+                        <option value="mafia">Mafia Romance</option>
+                        <option value="dark-academia">Dark Academia</option>
+                        <option value="enemies">Enemies to Lovers</option>
+                        <option value="forbidden">Forbidden Romance</option>
+                        <option value="psicologico">Romance Psicológico</option>
+                        <option value="sobrenatural">Romance Sobrenatural</option>
+                    </select>
+
+                    <label for="trope">Trope favorito:</label>
+                    <input type="text" id="trope" name="trope" placeholder="Ex: rivais que se apaixonam">
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Obsidian. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
